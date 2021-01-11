@@ -12,7 +12,7 @@ namespace OOP_January_Exam
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public decimal Balance { get; set; }
-        public decimal InterestDate { get; set; }
+        public DateTime InterestDate { get; set; }
 
         //Withdraw method
         public decimal Withdraw()
@@ -32,25 +32,27 @@ namespace OOP_January_Exam
 
     public class CurrentAccount : Account
     {
-        //The new additional feature of Full Time Employee
+        //Interest rate property for current accounts set at 3%
         public double InterestRate = 0.03;
 
         //Implementation of abstract method
         public override decimal CalculateInterest()
         {
-            
+            decimal Interest = Balance * (decimal)InterestRate;
+            InterestDate = DateTime.Now;
         }
     }
 
     public class SavingsAccount : Account
     {
-        //Properties - this are additional to the base class properties
+        //Interest rate property for current accounts set at 6%
         public double InterestRate = 0.06;
 
         //Implementation of abstract method
         public override decimal CalculateInterest()
         {
-            
+            decimal Interest = Balance * (decimal)InterestRate;
+            InterestDate = DateTime.Now;
         }
     }
 }
