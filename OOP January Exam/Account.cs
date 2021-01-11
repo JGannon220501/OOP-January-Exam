@@ -13,20 +13,23 @@ namespace OOP_January_Exam
         public string LastName { get; set; }
         public decimal Balance { get; set; }
         public DateTime InterestDate { get; set; }
+        public int AccountNumber { get; set; }
 
         //Withdraw method
-        public decimal Withdraw()
+        //public decimal Withdraw()
+        //{ }
 
         //Deposit method
-        public decimal Deposit()
+        //public decimal Deposit()
+        //{ }
 
         //Abstract method - implemented in sub classes
-        public abstract decimal CalculateInterest();
+        public abstract DateTime CalculateInterest();
 
         //Override of ToString - used to display information in listbox
         public override string ToString()
         {
-            return $"{FirstName} {LastName}";
+            return $"{AccountNumber} - {FirstName} {LastName}";
         }
     }
 
@@ -36,10 +39,10 @@ namespace OOP_January_Exam
         public double InterestRate = 0.03;
 
         //Implementation of abstract method
-        public override decimal CalculateInterest()
+        public override DateTime CalculateInterest()
         {
             decimal Interest = Balance * (decimal)InterestRate;
-            InterestDate = DateTime.Now;
+            return InterestDate = DateTime.Now;
         }
     }
 
@@ -49,10 +52,10 @@ namespace OOP_January_Exam
         public double InterestRate = 0.06;
 
         //Implementation of abstract method
-        public override decimal CalculateInterest()
+        public override DateTime CalculateInterest()
         {
             decimal Interest = Balance * (decimal)InterestRate;
-            InterestDate = DateTime.Now;
+            return InterestDate = DateTime.Now;
         }
     }
 }

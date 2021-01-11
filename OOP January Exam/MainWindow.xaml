@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_January_Exam"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <CheckBox x:Name="cacbx" Content="Current Accounts" HorizontalAlignment="Left" Height="16" Margin="27,30,0,0" VerticalAlignment="Top" Width="122"/>
         <CheckBox x:Name="sacbx" Content="Savings Account" HorizontalAlignment="Left" Height="16" Margin="154,30,0,0" VerticalAlignment="Top" Width="122"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="322" Margin="27,76,0,0" VerticalAlignment="Top" Width="249"/>
+        <ListBox x:Name="Accountslbx" HorizontalAlignment="Left" Height="322" Margin="27,76,0,0" VerticalAlignment="Top" Width="249"/>
         <TextBlock x:Name="accountlisttxblk" HorizontalAlignment="Left" Height="20" Margin="27,56,0,0" TextWrapping="Wrap" Text="Accounts List" VerticalAlignment="Top" Width="146"/>
         <TextBlock x:Name="accountdetailstxblk" HorizontalAlignment="Left" Height="20" Margin="303,56,0,0" TextWrapping="Wrap" Text="Accounts Details" VerticalAlignment="Top" Width="146"/>
         <Button x:Name="depositbtn" Content="Deposit" HorizontalAlignment="Left" Height="21" Margin="651,76,0,0" VerticalAlignment="Top" Width="119"/>
