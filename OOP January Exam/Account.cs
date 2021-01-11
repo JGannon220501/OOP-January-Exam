@@ -29,7 +29,7 @@ namespace OOP_January_Exam
         //Override of ToString - used to display information in listbox
         public override string ToString()
         {
-            return $"{AccountNumber} - {FirstName} {LastName}";
+            return $"{AccountNumber} - {LastName}, {FirstName}";
         }
     }
 
@@ -59,3 +59,5 @@ namespace OOP_January_Exam
         }
     }
 }
+
+//Github - https://github.com/JGannon220501/OOP-January-Exam

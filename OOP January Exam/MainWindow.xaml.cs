@@ -34,11 +34,11 @@ namespace OOP_January_Exam
             accounts = new List<Account>();
             filteredAccounts = new List<Account>();
 
-            //Create some part time and full time employees
+            //Create some current accounts and savings accounts
             CurrentAccount ca1 = new CurrentAccount() { FirstName = "John", LastName = "Smith", Balance = 250, AccountNumber = 1};
             SavingsAccount sa1 = new SavingsAccount() { FirstName = "Jess", LastName = "Walsh", Balance = 5000, AccountNumber = 2 };
 
-            //Add all employees to main colelction of employees
+            //Add all accounts to main colelction of accounts
             accounts.Add(ca1);
             accounts.Add(sa1);
 
@@ -49,12 +49,83 @@ namespace OOP_January_Exam
             sacbx.IsChecked = true;
         }
 
+        //Used to filter by full time and part time employees
+        private void Chbx_Click(object sender, RoutedEventArgs e)
+        {
+
+            //all employees
+            if ((cacbx.IsChecked == true) && (sacbx.IsChecked == true))
+                UpdateListBox(accounts);
+
+            //no employees
+            else if ((cacbx.IsChecked == false) && (sacbx.IsChecked == false))
+                Accountslbx.ItemsSource = null;
+
+            //Full time employees
+            else if ((cacbx.IsChecked == true) && (sacbx.IsChecked == false))
+            {
+                filteredAccounts.Clear();
+
+                foreach (Account account in accounts)
+                {
+                    if (account is CurrentAccount)
+                        filteredAccounts.Add(account);
+                }
+
+                UpdateListBox(filteredAccounts);
+            }
+
+            //Part time employees
+            else if ((cacbx.IsChecked == false) && (sacbx.IsChecked == true))
+            {
+                filteredAccounts.Clear();
+
+                foreach (Account account in accounts)
+                {
+                    if (account is SavingsAccount)
+
+                        filteredAccounts.Add(account);
+                }
+
+                UpdateListBox(filteredAccounts);
+            }
+
+        }
+
         //Method to update the listbox with the details of the list passed to it
         private void UpdateListBox(List<Account> accounts)
         {
             //Refreshes the display
             Accountslbx.ItemsSource = null;
             Accountslbx.ItemsSource = accounts;
+        }
+
+        //Method to print account data when selected from listbox
+        private void Accountslbx_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Account selected = Accountslbx.SelectedItem as Account;
+
+            if (selected != null)
+            {
+                fntxblk1.Text = selected.FirstName;
+                lntxblk.Text = selected.LastName;
+                perbalancetxblk.Text = selected.Balance.ToString();
+
+                if (selected is CurrentAccount)
+                {
+                    accounttxblk.Text = "Current Account";
+                }
+                else if (selected is SavingsAccount)
+                {
+                    accounttxblk.Text = "Savings Account";
+                }
+            }
+        }
+
+        //clears transaction textbox when clicked on
+        private void transactiontbx_GotFocus(object sender, RoutedEventArgs e)
+        {
+            transactiontbx.Clear();
         }
     }
 }
