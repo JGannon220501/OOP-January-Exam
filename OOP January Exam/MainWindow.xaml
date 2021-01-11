@@ -6,5 +6,28 @@
         xmlns:local="clr-namespace:OOP_January_Exam"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid/>
+    <Grid>
+        <CheckBox x:Name="cacbx" Content="Current Accounts" HorizontalAlignment="Left" Height="16" Margin="27,30,0,0" VerticalAlignment="Top" Width="122"/>
+        <CheckBox x:Name="sacbx" Content="Savings Account" HorizontalAlignment="Left" Height="16" Margin="154,30,0,0" VerticalAlignment="Top" Width="122"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="322" Margin="27,76,0,0" VerticalAlignment="Top" Width="249"/>
+        <TextBlock x:Name="accountlisttxblk" HorizontalAlignment="Left" Height="20" Margin="27,56,0,0" TextWrapping="Wrap" Text="Accounts List" VerticalAlignment="Top" Width="146"/>
+        <TextBlock x:Name="accountdetailstxblk" HorizontalAlignment="Left" Height="20" Margin="303,56,0,0" TextWrapping="Wrap" Text="Accounts Details" VerticalAlignment="Top" Width="146"/>
+        <Button x:Name="depositbtn" Content="Deposit" HorizontalAlignment="Left" Height="21" Margin="651,76,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="withdrawbtn" Content="Withdraw" HorizontalAlignment="Left" Height="21" Margin="651,137,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="interestbtn" Content="Interest" HorizontalAlignment="Left" Height="21" Margin="651,197,0,0" VerticalAlignment="Top" Width="119"/>
+        <TextBlock x:Name="fntxblk" HorizontalAlignment="Left" Height="25" Margin="303,97,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="fntxblk1" HorizontalAlignment="Left" Height="25" Margin="399,97,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="fntxblk_Copy" HorizontalAlignment="Left" Height="25" Margin="303,362,0,0" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top" Width="111"/>
+        <TextBlock x:Name="transactiontxblk" HorizontalAlignment="Left" Height="25" Margin="419,362,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="fntxblk_Copy1" HorizontalAlignment="Left" Height="25" Margin="303,308,0,0" TextWrapping="Wrap" Text="Interest Date" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="interesttxblk" HorizontalAlignment="Left" Height="25" Margin="399,308,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="fntxblk_Copy2" HorizontalAlignment="Left" Height="25" Margin="303,268,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="balancetxblk" HorizontalAlignment="Left" Height="25" Margin="399,268,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="fntxblk_Copy3" HorizontalAlignment="Left" Height="25" Margin="303,228,0,0" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="accounttxblk" HorizontalAlignment="Left" Height="25" Margin="399,228,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="fntxblk_Copy4" HorizontalAlignment="Left" Height="25" Margin="303,184,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="perbalancetxblk" HorizontalAlignment="Left" Height="25" Margin="399,184,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="fntxblk_Copy5" HorizontalAlignment="Left" Height="25" Margin="303,139,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="96"/>
+        <TextBlock x:Name="lntxblk" HorizontalAlignment="Left" Height="25" Margin="399,139,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="96"/>
+    </Grid>
 </Window>
