@@ -127,5 +127,22 @@ namespace OOP_January_Exam
         {
             transactiontbx.Clear();
         }
+
+        private void depositbtn_Click(object sender, RoutedEventArgs e)
+        {
+            decimal amount = Convert.ToDecimal(transactiontbx.Text);
+            Deposit();
+        }
+
+        private void withdrawbtn_Click(object sender, RoutedEventArgs e)
+        {
+            decimal amount = Convert.ToDecimal(transactiontbx.Text);
+            Withdraw();
+        }
+
+        private void interestbtn_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

@@ -12,9 +12,9 @@
         <ListBox x:Name="Accountslbx" HorizontalAlignment="Left" Height="322" Margin="27,76,0,0" VerticalAlignment="Top" Width="249" SelectionChanged="Accountslbx_SelectionChanged"/>
         <TextBlock x:Name="accountlisttxblk" HorizontalAlignment="Left" Height="20" Margin="27,56,0,0" TextWrapping="Wrap" Text="Accounts List" VerticalAlignment="Top" Width="146"/>
         <TextBlock x:Name="accountdetailstxblk" HorizontalAlignment="Left" Height="20" Margin="303,56,0,0" TextWrapping="Wrap" Text="Accounts Details" VerticalAlignment="Top" Width="146"/>
-        <Button x:Name="depositbtn" Content="Deposit" HorizontalAlignment="Left" Height="21" Margin="651,76,0,0" VerticalAlignment="Top" Width="119"/>
-        <Button x:Name="withdrawbtn" Content="Withdraw" HorizontalAlignment="Left" Height="21" Margin="651,137,0,0" VerticalAlignment="Top" Width="119"/>
-        <Button x:Name="interestbtn" Content="Interest" HorizontalAlignment="Left" Height="21" Margin="651,197,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="depositbtn" Content="Deposit" HorizontalAlignment="Left" Height="21" Margin="651,76,0,0" VerticalAlignment="Top" Width="119" Click="depositbtn_Click"/>
+        <Button x:Name="withdrawbtn" Content="Withdraw" HorizontalAlignment="Left" Height="21" Margin="651,137,0,0" VerticalAlignment="Top" Width="119" Click="withdrawbtn_Click"/>
+        <Button x:Name="interestbtn" Content="Interest" HorizontalAlignment="Left" Height="21" Margin="651,197,0,0" VerticalAlignment="Top" Width="119" Click="interestbtn_Click"/>
         <TextBlock x:Name="fntxblk" HorizontalAlignment="Left" Height="25" Margin="303,97,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="96"/>
         <TextBlock x:Name="fntxblk1" HorizontalAlignment="Left" Height="25" Margin="399,97,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="96"/>
         <TextBlock x:Name="fntxblk_Copy" HorizontalAlignment="Left" Height="25" Margin="303,362,0,0" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top" Width="111"/>

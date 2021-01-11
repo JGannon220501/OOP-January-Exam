@@ -16,12 +16,18 @@ namespace OOP_January_Exam
         public int AccountNumber { get; set; }
 
         //Withdraw method
-        //public decimal Withdraw()
-        //{ }
+        public decimal Withdraw()
+        {
+            decimal newBalance = Balance + amount;
+            Balance = newBalance;
+        }
 
         //Deposit method
-        //public decimal Deposit()
-        //{ }
+        public decimal Deposit()
+        {
+            decimal newBalance = Balance - amount;
+            Balance = newBalance;
+        }
 
         //Abstract method - implemented in sub classes
         public abstract DateTime CalculateInterest();
